@@ -131,7 +131,7 @@ app.listen(port, () => {
   console.log(`Server running on port ${port}`);
 });
 
-// Create an admin user (you should remove this after creating the first admin)
+// Create an admin user (we should remove this after creating the first admin)
 bcrypt.hash('admin123', 10, (err, hash) => {
   if (err) {
     console.error('Error hashing password:', err);
